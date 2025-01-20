@@ -126,8 +126,47 @@ gap: 24px;
   /* padding: 24px; */
 }
 
+/* love style */
+.feature{
+  gap: 50px;
+}
+.love-title{
+ font-weight: 700;
+ font-style: 2.8rem; 
+ border-left:5px solid #FF900E ;
+ padding-left: 21px;
+}
+.love-card{
+  padding: 30px;
+  box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.love-device{
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+#experience-badge{
+  padding: 54px 42px;
+  color: #FFFFFF;
+  font-size: 1.25rem;
+  font-weight: 500;
+  border-radius: 8px;
+  margin-left:-100px ;
+  margin-top: -100px;
+}
+#experience-year{
+  font-weight: 700;
+  font-size: 4rem;
+}
+.love-img img{
+  width: 100%;
+}
+
+
 /* fact releted */
-.fact-containar{
+.fact-containar {
   display: grid;
   grid-template-columns: repeat(4,1fr);
   /* margin-left: 290px; */
@@ -183,7 +222,7 @@ gap: 24px;
 
 
 @media  screen and (max-width: 576px){
-  .navbar, .nav-links, .teams{
+  .navbar, .nav-links, .teams, .feature{
     flex-direction: column;
   }
   .image-container, .fact-containar, .sponspors-img{
@@ -208,10 +247,11 @@ gap: 24px;
     justify-items: center;
     gap: 50px;
   }
+
 }
 /* medium device */
 @media screen and (min-width:576px) and (max-width:992px) {
-  .teams{
+  .teams, .feature{
     flex-direction: column;
   }
   .features-container{
@@ -221,6 +261,10 @@ gap: 24px;
     grid-template-columns:repeat(2, 1fr) ;
     gap: 50px;
     justify-items: center;
+  }
+  #experience-badge{
+    margin-left:0;
+    margin-top: 0;
   }
 }
 
